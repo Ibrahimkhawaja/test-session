@@ -6,9 +6,9 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          a=6
+          a="test: hello world"
           b=6
-          if [ $a == $b ]
+          if [ $a == "test:*" ]
           then
              echo "a is equal to b"
           else
