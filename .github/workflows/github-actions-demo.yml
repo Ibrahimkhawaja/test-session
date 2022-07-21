@@ -13,5 +13,10 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}
+          if [ $a == $b ]
+          then
+             echo "a is equal to b"
+          else
+             echo "a is not equal to b"
+          fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
