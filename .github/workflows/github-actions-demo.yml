@@ -8,7 +8,7 @@ jobs:
         run: |
           a="test: hello world"
           b=6
-          if [ $a == test:* ]
+          if [[ $a == test:* ]]
           then
              echo "a is equal to b"
           else
