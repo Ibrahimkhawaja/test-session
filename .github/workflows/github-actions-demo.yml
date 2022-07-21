@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          a=5
+          a=6
           b=6
           if [ $a == $b ]
           then
