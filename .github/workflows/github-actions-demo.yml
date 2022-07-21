@@ -6,12 +6,11 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
-          a="chore(deps): test comment"
-          b=6
-          if [[ $a == chore\(deps\)* ]]
+          chore_deps=`git log -1 --pretty=%B | tr -d '\n'`
+          if [[ $chore_deps == chore\(deps\)* ]]
           then
-             echo "a is equal to b"
+            echo "hello world"
           else
-             echo "a is not equal to b"
+            echo "hello daemon"
           fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
