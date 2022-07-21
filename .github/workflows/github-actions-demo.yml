@@ -9,5 +9,5 @@ jobs:
         
       - name: CHECK CONDITION
         run: |
-          bash test.sh
+          ./test.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
