@@ -4,7 +4,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List files in the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: CHECK CONDITION
         run: |
           chore_deps=`git log -1 --pretty=%B | tr -d '\n'`
           if [[ $chore_deps == chore\(deps\)* ]]
