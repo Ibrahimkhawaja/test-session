@@ -8,7 +8,7 @@ jobs:
         run: |
           a="chore(deps): test comment"
           b=6
-          if [[ $a == chore(deps)* ]]
+          if [[ $a == chore\(deps\)* ]]
           then
              echo "a is equal to b"
           else
