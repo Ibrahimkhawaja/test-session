@@ -2,7 +2,7 @@
 chore_deps=`git log -1 --pretty=%B | tr -d '\n'`
 if [[ $chore_deps == chore\(deps\)* ]]
 then
-  echo "hello world"
+  exit 0
 else
-  echo "hello daemon"
+  exit 1
 fi
